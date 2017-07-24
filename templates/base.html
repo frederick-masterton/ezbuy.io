@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<title>
+		{% block titles %}Ezbuy.io
+		{% endblock %}
+	</title>
+	<body>
+		<div class="container">
+			{% block messages %}
+			   {% for message in get_flashed_messages() %}
+			   <div class="flash">{{ message }}</div>
+			   {% endfor %}
+			   {% if error %}
+			     <p clas="error"><strong>Error:</strong>{{ error }}</p>
+			   {% endif %}
+			{% endblock %}
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
