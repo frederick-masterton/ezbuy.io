@@ -32,7 +32,7 @@ ipaddress==1.0.18
 itsdangerous==0.24
 Jinja2==2.7.2
 lockfile==0.8
-lxml==3.3.3
+lxml==4.9.1
 Mako==1.0.7
 MarkupSafe==0.18
 oauthlib==0.6.1
